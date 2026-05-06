@@ -1,0 +1,6 @@
+name,focus,signal,slack,drag,confidence,score,lane
+baseline,geometry span,69,27,11,85,217,ship
+stress,atlas pressure,72,40,13,92,237,ship
+edge,shader drift,70,49,32,94,187,ship
+recovery,render budget,57,54,12,82,214,ship
+stale,geometry span,68,50,18,54,186,ship

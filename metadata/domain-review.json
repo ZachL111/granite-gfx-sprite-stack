@@ -1,0 +1,73 @@
+{
+  "repo": "granite-gfx-sprite-stack",
+  "language": "Dart",
+  "category": "Graphics",
+  "goal": "Design a Dart verification harness for sprite systems, covering diagnostic reporting, negative fixtures, and failure-oriented tests.",
+  "review_model": {
+    "terms": [
+      "geometry span",
+      "atlas pressure",
+      "shader drift",
+      "render budget"
+    ],
+    "lanes": [
+      "ship",
+      "watch",
+      "hold"
+    ],
+    "score": "signal * 2 + slack + confidence - drag * 3",
+    "purpose": "surface the domain-specific cases that need the most careful review"
+  },
+  "cases": [
+    {
+      "name": "baseline",
+      "focus": "geometry span",
+      "signal": 69,
+      "slack": 27,
+      "drag": 11,
+      "confidence": 85,
+      "score": 217,
+      "lane": "ship"
+    },
+    {
+      "name": "stress",
+      "focus": "atlas pressure",
+      "signal": 72,
+      "slack": 40,
+      "drag": 13,
+      "confidence": 92,
+      "score": 237,
+      "lane": "ship"
+    },
+    {
+      "name": "edge",
+      "focus": "shader drift",
+      "signal": 70,
+      "slack": 49,
+      "drag": 32,
+      "confidence": 94,
+      "score": 187,
+      "lane": "ship"
+    },
+    {
+      "name": "recovery",
+      "focus": "render budget",
+      "signal": 57,
+      "slack": 54,
+      "drag": 12,
+      "confidence": 82,
+      "score": 214,
+      "lane": "ship"
+    },
+    {
+      "name": "stale",
+      "focus": "geometry span",
+      "signal": 68,
+      "slack": 50,
+      "drag": 18,
+      "confidence": 54,
+      "score": 186,
+      "lane": "ship"
+    }
+  ]
+}
