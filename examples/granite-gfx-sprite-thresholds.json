@@ -1,0 +1,17 @@
+{
+  "repo": "granite-gfx-sprite-stack",
+  "thresholds": {
+    "signal": 2,
+    "slack": 2,
+    "confidence": 1,
+    "drag": 4,
+    "ship": 209,
+    "watch": 99
+  },
+  "terms": [
+    "geometry span",
+    "atlas pressure",
+    "shader drift",
+    "render budget"
+  ]
+}

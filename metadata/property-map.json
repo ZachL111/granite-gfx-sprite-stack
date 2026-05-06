@@ -1,0 +1,28 @@
+{
+  "repo": "granite-gfx-sprite-stack",
+  "language": "Dart",
+  "category": "Graphics",
+  "goal": "Design a Dart verification harness for sprite systems, covering diagnostic reporting, negative fixtures, and failure-oriented tests.",
+  "weights": {
+    "signal": 2,
+    "slack": 2,
+    "confidence": 1,
+    "drag": 4
+  },
+  "thresholds": {
+    "ship": 209,
+    "watch": 99
+  },
+  "properties": [
+    "raising signal cannot reduce score",
+    "raising drag cannot improve score",
+    "lane labels must match configured thresholds",
+    "golden fixture ids must remain unique"
+  ],
+  "fixture_files": [
+    "fixtures/golden/scoreboard.csv",
+    "fixtures/golden/lane-matrix.csv",
+    "fixtures/fuzz/mutations.csv",
+    "fixtures/fuzz/boundary-cases.jsonl"
+  ]
+}
